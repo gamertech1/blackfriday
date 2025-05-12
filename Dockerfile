@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file into the image
-COPY .
+COPY blackfriday-1.0-SNAPSHOT.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
