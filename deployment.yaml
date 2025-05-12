@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: gamertech1/my-app:42
+        image: gamertech1/my-app:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 9098
         resources:
           limits:
             memory: "512Mi"
@@ -38,5 +38,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 9098
   type: LoadBalancer

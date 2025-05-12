@@ -11,7 +11,7 @@ public class Company {
     List<StockEntry> products = new ArrayList<>();
     private int sellAsset = 0;
 
-    private SalesHistoryProxy salesHistoryProxy = new SalesHistoryProxy();
+    private final SalesHistoryProxy salesHistoryProxy = new SalesHistoryProxy();
 
     public float sells(String capsule) {
         int sellPrice = (int) (products.get(0).sell(SELL_PACKAGE) * NORMAL_MARGIN);
